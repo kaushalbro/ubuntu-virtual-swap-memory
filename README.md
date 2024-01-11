@@ -17,8 +17,8 @@ dd if=/dev/zero of=/media/fasthdd/swapfile.img bs=1024 count=1M
 
 
 # Resize Swap to 8GB
-# Turn swap off
-# This moves stuff in swap to the main memory and might take several minutes
+#Turn swap off
+#This moves stuff in swap to the main memory and might take several minutes
 sudo swapoff -a
 
 # Create an empty swapfile
