@@ -27,7 +27,8 @@ sudo swapoff -a
 sudo dd if=/dev/zero of=/swapfile bs=1G count=8
 
 #Set the correct permissions <br>
-sudo chmod 0600 /swapfile (if not work sudo chmod 0644 /swapfile)
+sudo chmod 0600 /swapfile <br>
+(if not work sudo chmod 0644 /swapfile)
 
 
 #Set up a Linux swap area
