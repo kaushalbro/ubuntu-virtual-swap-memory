@@ -1,6 +1,6 @@
 # ubuntu-virtual-swap-memory
 
-'free -h'  - get details
+'free -h'  - get details<br>
 cd /proc/sys/vm/swappiness
 
 
