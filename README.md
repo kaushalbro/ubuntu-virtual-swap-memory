@@ -1,8 +1,6 @@
 # ubuntu-virtual-swap-memory
 
 'free -h'  - get details<br>
-cd /proc/sys/vm/swappiness
-
 
 # checking swap
 
@@ -53,6 +51,6 @@ cat /proc/sys/vm/swappiness  <br>
 sudo sysctl vm.swappiness=10  <br>
 #Edit and add line <br>
 sudo nano /etc/sysctl.conf  <br>
-vm.swappiness=10 <br>
+vm.swappiness=60 <br>
 #Apply changes  <br>
 sudo sysctl -p
