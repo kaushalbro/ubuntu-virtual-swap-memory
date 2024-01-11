@@ -54,3 +54,8 @@ sudo nano /etc/sysctl.conf  <br>
 vm.swappiness=60 <br>
 #Apply changes  <br>
 sudo sysctl -p
+# Note swappiness
+Swappiness can have a value between 0 and 100(200 according to chatgpt). A value of 0 instructs the kernel to aggressively avoid swapping out for as long as possible. A value of 100 will aggressively be swapping processes out of physical memory.
+A lower value will make the kernel to try to avoid swapping whenever possible while a higher value means the kernel will try to use the swap space more aggressively.
+Accessing swap memory is much slower than accessing physical memory directly. A lower value for the swappiness parameter will most likely improve overall system performance. For regular desktop installation, a value of 10 is recommended. A swappiness value of 0 or 1 is recommended for most database servers.
+The optimal swappiness value depends on your system workload and the size of the RAM memory . You should adjust this parameter in small increments to find an optimal value.
