@@ -6,11 +6,11 @@ cd /proc/sys/vm/swappiness
 
 # checking swap
 
-' cat /proc/meminfo ' to see total swap, and free swap (all linux)
-'cat /proc/swaps' to see which swap devices are being used (all linux)
-'swapon -s' to see swap devices and sizes (where swapon is installed)
-'vmstat' for current virtual memory statistics
-'swapon --show'
+' cat /proc/meminfo ' to see total swap, and free swap (all linux)  <br>
+'cat /proc/swaps' to see which swap devices are being used (all linux) <br>
+'swapon -s' to see swap devices and sizes (where swapon is installed) <br>
+'vmstat' for current virtual memory statistics <br>
+'swapon --show' <br>
 
 # debug
 sudo swapon --all --verbose
@@ -32,13 +32,13 @@ sudo dd if=/dev/zero of=/swapfile bs=1G count=8
 
 #Set the correct permissions <br>
 sudo chmod 0600 /swapfile <br>
-(if not work sudo chmod 0644 /swapfile)
+(if not work sudo chmod 0644 /swapfile) <br>
 
 
-#Set up a Linux swap area
-sudo mkswap /swapfile
-#Turn the swap on
-sudo swapon /swapfile 
+#Set up a Linux swap area <br>
+sudo mkswap /swapfile <br>
+#Turn the swap on <br>
+sudo swapon /swapfile  <br>
 
 
 # Check if it worked
