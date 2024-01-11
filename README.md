@@ -47,3 +47,12 @@ grep Swap /proc/meminfo
 # Make it permanent (persist on restarts)
 #Add this line to the end of your /etc/fstab: <br>
 /swapfile swap swap sw 0 0
+
+# swappiness Details
+cat /proc/sys/vm/swappiness  <br>
+sudo sysctl vm.swappiness=10  <br>
+#Edit and add line <br>
+sudo nano /etc/sysctl.conf  <br>
+vm.swappiness=10 <br>
+#Apply changes  <br>
+sudo sysctl -p
