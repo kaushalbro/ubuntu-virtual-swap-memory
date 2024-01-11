@@ -1,5 +1,9 @@
 # ubuntu-virtual-swap-memory
 
+'free -h'  - get details
+cd /proc/sys/vm/swappiness
+
+
 # checking swap
 
 ' cat /proc/meminfo ' to see total swap, and free swap (all linux)
