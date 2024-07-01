@@ -54,6 +54,10 @@ sudo nano /etc/sysctl.conf  <br>
 vm.swappiness=60 <br>
 #Apply changes  <br>
 sudo sysctl -p
+
+
+# Restart required if not host is server
+
 # Note swappiness
 Swappiness can have a value between 0 and 100(200 according to chatgpt). A value of 0 instructs the kernel to aggressively avoid swapping out for as long as possible. A value of 100 will aggressively be swapping processes out of physical memory.
 A lower value will make the kernel to try to avoid swapping whenever possible while a higher value means the kernel will try to use the swap space more aggressively.
